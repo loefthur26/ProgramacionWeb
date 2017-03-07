@@ -1,0 +1,21 @@
+extends plantilla/p.jade
+
+append config
+	-titulo ="Contactanos"
+
+block imagen
+	img(src="img/imagen-p.jpg")
+
+block main
+	
+	h1 #{titulo}
+
+	p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	form(action="guardar.php")
+		label(for="Nombre") Nombre completo
+			input(type="text" size="50" maxlength="50" placeholder="Introduzca aquí su nombre completo" required)
+		label(for="Correo") Correo Electrónico
+			input(type="email" size="50" maxlength="50" placeholder="Introduzca aquí su correo" required)
+		label(for="Mensaje") Mensaje
+			textarea(cols="10" rows="10")

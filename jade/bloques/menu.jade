@@ -1,0 +1,7 @@
+- var url =["inicio","nosotros","informacion","contacto"]
+ul
+	each a in url
+		if a=="inicio"
+			li: a(href="index.html") #{a}
+		else
+			li: a(href=a+".html") #{a}

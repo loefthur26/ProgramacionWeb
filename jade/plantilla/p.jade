@@ -1,0 +1,28 @@
+block config
+	include ../config/variable.jade
+
+<!DOCTYPE html>
+html
+	head
+		title #{titulo}
+		meta(charset="UTF-8")
+		meta(name="description" content="#{descripcion}")
+		link(rel="icon" href="imagen.png")
+		link(rel="stylesheet" type="text/css" href="css/ed-grid.min.css")
+	body
+		header
+			include ../bloques/logotipo.jade
+			nav
+				include ../bloques/menu.jade
+		#imagen
+			block imagen
+		main
+			block main
+		aside
+			block aside
+				h2 Siguenos en facebook
+				a(href="http://facebook.com") Seguir
+		footer
+			block footer
+				p practica de HTML5 y jade
+				p periodo Enero - Agosto 2017
