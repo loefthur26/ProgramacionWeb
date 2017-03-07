@@ -14,17 +14,25 @@ html
 			.ed-item.s-20
 				include ../bloques/logotipo.jade
 			nav
-				.ed-item
+				.ed-item.s-offset-2-6
 					include ../bloques/menu.jade
-		#imagen
-			block imagen
-		main
-			block main
-		aside
-			block aside
-				h2 Siguenos en facebook
-				a(href="http://facebook.com") Seguir
-		footer
-			block footer
-				p practica de HTML5 y jade
-				p periodo Enero - Agosto 2017
+		#imagen.ed-container
+			.ed-item
+				block imagen
+		main.ed-container
+			.ed-item
+				block main
+		aside.ed-container
+			.ed-item
+				block aside
+					.s-main-center
+						h2 Siguenos en facebook
+					.s-main-center
+						a(href="http://facebook.com") Seguir
+		footer.ed-container
+			.ed-item
+				block footer
+					.s-main-center
+						p practica de HTML5 y jade
+					.s-main-center
+						p periodo Enero - Agosto 2017
