@@ -11,10 +11,11 @@ html
 		link(rel="stylesheet" type="text/css" href="css/ed-grid.min.css")
 	body
 		header.ed-container
-			.ed-item.s-30
+			.ed-item.s-20
 				include ../bloques/logotipo.jade
 			nav
-				include ../bloques/menu.jade
+				.ed-item
+					include ../bloques/menu.jade
 		#imagen
 			block imagen
 		main
