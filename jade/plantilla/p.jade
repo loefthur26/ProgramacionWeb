@@ -8,22 +8,23 @@ html
 		meta(charset="UTF-8")
 		meta(name="description" content="#{descripcion}")
 		link(rel="icon" href="imagen.png")
+		link(rel="stylesheet" type="text/css" href="css/ed-grid.css")
 		link(rel="stylesheet" type="text/css" href="css/ed-grid.min.css")
+		link(rel="stylesheet" type="text/css" href="css/style.css")
 	body
 		header.ed-container
-			.ed-item.s-20
+			.ed-item.s-10
 				include ../bloques/logotipo.jade
 			nav
-				.ed-item.s-offset-2-6
+				.ed-item.s-offset-45
 					include ../bloques/menu.jade
 		#imagen.ed-container
 			.ed-item
 				block imagen
-		main.ed-container
-			.ed-item
+		.ed-container
+			main.ed-item.s-75
 				block main
-		aside.ed-container
-			.ed-item
+			aside.ed-item.s-25
 				block aside
 					.s-main-center
 						h2 Siguenos en facebook

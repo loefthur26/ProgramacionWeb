@@ -1,0 +1,8 @@
+.ed-menu a{
+	text-transform: uppercase;
+}
+
+.ed-menu a:hover{
+	background-color: green;
+	color: white;
+}
